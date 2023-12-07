@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Nêu Auto tín cmn chỉ",
+  "description": "",
+  "version": "0.0.0",
+  "icons": {
+    "48": "favicon.png"
+ },
+  "action": {
+    "default_icon": "favicon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": ["cookies", "tabs"],
+  "host_permissions": ["*://*.neu.edu.vn/"]
+}

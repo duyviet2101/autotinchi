@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpimusPrimeOEOEOE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="notAllowed">
+    <h1>Quay về tab tinchi.neu để sử dụng!</h1>
+  </div>
+  <div class="content">
+    <h1 class="title">
+      Tự động đăng kí
+    </h1>
+
+    <div class="input">
+      <h2 class="hello">Xin chào, <span class="MSV"></span></h2>
+      <div class="inputTextarea">
+        <label for="inputID"><strong>Nhập mã học phần, tìm trong tra cứu học phần, mỗi học phần là 1 dòng:</strong></label>
+        <textarea name="inputID" id="inputID" cols="30" rows="5" placeholder="Nhập mã học phần"></textarea>
+      </div>
+      <div class="buttons">
+        <button id="runBtn">Go Go Go</button>
+        <button id="stopBtn">Nghỉ</button>
+      </div>
+    </div>
+
+    <div class="search">
+      <h3>Tra cứu học phần:</h3>
+      <div class="searchSubject">
+        <div class="searchSubjectInput">
+          <b>
+            <select name="ddlMonHoc" id="">
+              <option value="1">Tên HP</option>
+              <option value="0">Mã HP</option>
+            </select>
+          </b>
+          <input type="text" id="searchSubjectInput" placeholder="Nhập từ khoá" name="txtSearch">
+          <button id="searchSubjectBtn">Tìm kiếm</button>
+          <button id="hideResultSearch">Ẩn/hiện kết quả</button>
+
+        </div>
+        <div class="searchSubjectResult show">
+  
+        </div>
+      </div>
+    </div>
+
+    <div class="statusTable">
+      <h3>Bảng thao tác:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Mã học phần</th>
+            <th>Trạng thái</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody id="statusTableBody">
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Bảng kết quả:</h3>
+    <button id="reloadResultBtn">Reload</button>
+    <div class="resultTable"> </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
